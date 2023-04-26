@@ -8,7 +8,6 @@
 
 <form class="del_btn_form" method="POST" action="{{ route('user.destroy') }}">
     @csrf
-    @method('DELETE')
     <button class="del_btn" type="submit"><b>退会する</b></button>
 </form>
 

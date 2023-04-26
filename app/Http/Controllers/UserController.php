@@ -128,12 +128,12 @@ class UserController extends Controller
         $user->img_url = $imgUrl;
     }
 
-    if ($request->filled('password')) {
-        $user->password = Hash::make($request->input('password'));
-    }
+    //if ($request->filled('password')) {
+    //    $user->password = Hash::make($request->input('password'));
+    //}
 
     $user->save();
-    return redirect()->route('mypage.edit');
+    return redirect('/myPage');
     }
 
     

@@ -60,7 +60,7 @@
     </div>
 
     <div class="mypageEdit_area">
-        <label class="edit_area_name" for="password">◆新パスワード</label>
+        <label class="edit_area_name" for="password">◆パスワード</label>
         <input class="edit_form" id="password" type="password" name="password" required>
         @error('password')
             <span class="invalid-feedback" role="alert">
@@ -69,10 +69,12 @@
         @enderror
     </div>
 
+    <!--
     <div class="mypageEdit_area">
         <label class="edit_area_name" for="password-confirm">◆新パスワード（確認用）</label>
         <input class="edit_form" id="password-confirm" type="password" name="password_confirmation" required>
     </div>
+    -->
 
     <div class="edit_btn_wrap">
         <button class="edit_btn" type="submit"><b>変更する</b></button>

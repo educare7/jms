@@ -123,9 +123,9 @@ class UserController extends Controller
     if ($request->hasFile('img_url')) {
         $profileImage = $request->file('img_url');
         $path = $profileImage->store('public/img_url');
-        $user->profile_image = str_replace('public/', 'storage/', $path);
+        $user->img_url = str_replace('public/', 'storage/', $path);
     } else {
-        $user->profile_image = $imgUrl;
+        $user->img_url = $imgUrl;
     }
 
     if ($request->filled('password')) {
